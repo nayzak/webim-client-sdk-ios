@@ -45,7 +45,7 @@ final class WebimRequest {
     private var httpBody: Data?
     private var messageID: String?
     private weak var rateOperatorCompletionHandler: RateOperatorCompletionHandler?
-    private weak var sendFileCompletionHandler: SendFileCompletionHandler?
+    private let sendFileCompletionHandler: SendFileCompletionHandler?
     
     // MARK: - Initialization
     init(httpMethod: AbstractRequestLoop.HTTPMethods,
